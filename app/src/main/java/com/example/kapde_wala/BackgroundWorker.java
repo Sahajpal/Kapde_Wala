@@ -22,7 +22,6 @@ import java.net.URLEncoder;
 public class BackgroundWorker extends AsyncTask<String,Void,String>{
     Context context;
     AlertDialog alertDialog;
-    static String result="";
     BackgroundWorker(Context ctx){
         context = ctx;
     }
@@ -50,6 +49,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String>{
                 InputStream inputStream = httpURLConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
                 String line="";
+                String result="";
                 while ((line = bufferedReader.readLine()) != null){
                     result += line;
                 }
@@ -74,12 +74,18 @@ public class BackgroundWorker extends AsyncTask<String,Void,String>{
 
     @Override
     protected void onPostExecute(String result) {
-        alertDialog.setMessage(result);
-        this.result=result;
-        alertDialog.show();
+        if(!result.equals("Login Success")){
+            alertDialog.setMessage(result);
+            alertDialog.show();
+            return;
+        }
+        ((LoginActivity)context).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                ((LoginActivity)context).Login();
+            }
+        });
     }
-
-
     @Override
     protected void onProgressUpdate(Void... values) {
         super.onProgressUpdate(values);

@@ -27,10 +27,11 @@ public class LoginActivity extends AppCompatActivity {
         String type = "login";
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, Username, Password);
-        if (backgroundWorker.result.equals("Login Success")) {
-            Intent intent = new Intent(LoginActivity.this, MainMenu.class);
-            startActivity(intent);
-        }
+    }
+
+    public void Login(){
+        Intent intent = new Intent(LoginActivity.this, MainMenu.class);
+        startActivity(intent);
     }
 }
 
