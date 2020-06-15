@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dashboard"
     tools:context=".MainMenu">
 
     <Button
@@ -13,13 +14,15 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="198dp"
         android:layout_marginEnd="49dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/group203"
         android:onClick="cdclick"
-        android:text="Cloth Depository"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
 
     <Button
         android:id="@+id/button2"
@@ -27,12 +30,13 @@
         android:layout_height="100dp"
         android:layout_marginTop="198dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="38dp"
-        android:onClick="pudclick"
-        android:text="Pick Up Date"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/orderstatus"
+        android:onClick="osclick"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
 
     <Button
         android:id="@+id/button3"
@@ -40,11 +44,12 @@
         android:layout_height="100dp"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="49dp"
-        android:layout_marginBottom="38dp"
-        android:onClick="doaclick"
-        android:text="Drop Off Availability"
+        android:layout_marginBottom="32dp"
+        android:onClick="coclick"
+        android:background="@drawable/cancelorder"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -52,9 +57,9 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="38dp"
-        android:onClick="lrclick"
-        android:text="Laundry Record"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/orderhistory"
+        android:onClick="orclick"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -64,21 +69,23 @@
         android:layout_height="100dp"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="49dp"
-        android:layout_marginBottom="156dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/group192"
         android:onClick="fbclick"
-        android:text="Feedback"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginEnd="81dp"
-        android:layout_marginBottom="156dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/group191"
         android:onClick="hdclick"
-        android:text="Help Desk"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

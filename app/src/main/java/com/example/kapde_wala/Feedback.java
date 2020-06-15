@@ -30,13 +30,13 @@ public class Feedback extends AppCompatActivity {
                 String mesS = message.getText().toString();
 
                 Intent email = new Intent(Intent.ACTION_SEND);
-                //email.putExtra(Intent.EXTRA_EMAIL, toS);
                 email.putExtra(Intent.EXTRA_EMAIL, new String[] {toS});
                 email.putExtra(Intent.EXTRA_SUBJECT, subS);
                 email.putExtra(Intent.EXTRA_TEXT, mesS);
 
                 email.setType("message/rfc822");
                 startActivity(Intent.createChooser(email, "Choose app to send email"));
+
 
             }
         });

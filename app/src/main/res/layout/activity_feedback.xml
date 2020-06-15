@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/feedback"
     tools:context=".Feedback">
 
     <EditText
@@ -18,6 +19,7 @@
         android:hint="Email Id"
         android:inputType="textEmailAddress"
         android:text="sahajpal80@gmail.com"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/subject"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,12 +31,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="49dp"
         android:layout_marginEnd="149dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/inputs1"
         android:ems="10"
-        android:hint="Subject"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/emailText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -43,24 +46,26 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="49dp"
         android:layout_marginEnd="149dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/inputs"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Give your feed back......."
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toTopOf="@+id/sendEmail"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/sendEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginEnd="211dp"
-        android:layout_marginBottom="299dp"
-        android:text="Send"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/group204"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

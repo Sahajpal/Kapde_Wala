@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kapde_wala">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE0" />
 
     <application
         android:allowBackup="true"
@@ -11,11 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HelpDesk"></activity>
+        <activity android:name=".OrderStatus"></activity>
+        <activity android:name=".OrderHistory" />
+        <activity android:name=".CancelOrder" />
+        <activity android:name=".HelpDesk" />
         <activity android:name=".Feedback" />
-        <activity android:name=".LaundryRecord" />
-        <activity android:name=".DropOffAvailability" />
-        <activity android:name=".PickUpDate" />
         <activity android:name=".ClothDepository" />
         <activity android:name=".MainMenu" />
         <activity android:name=".LoginActivity" />

@@ -19,18 +19,18 @@ public class MainMenu extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void pudclick(View view){
-        Intent intent = new Intent(MainMenu.this, PickUpDate.class);
+    public void osclick(View view){
+        Intent intent = new Intent(MainMenu.this, OrderStatus.class);
         startActivity(intent);
     }
 
-    public void doaclick(View view){
-        Intent intent = new Intent(MainMenu.this, DropOffAvailability.class);
+    public void coclick(View view){
+        Intent intent = new Intent(MainMenu.this, CancelOrder.class);
         startActivity(intent);
     }
 
-    public void lrclick(View view){
-        Intent intent = new Intent(MainMenu.this, LaundryRecord.class);
+    public void orclick(View view){
+        Intent intent = new Intent(MainMenu.this, OrderHistory.class);
         startActivity(intent);
     }
 

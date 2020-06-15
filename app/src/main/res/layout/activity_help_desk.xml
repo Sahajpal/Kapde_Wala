@@ -4,6 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HelpDesk">
+    tools:context=".HelpDesk"
+    android:background="@drawable/helpdesk">
 
+    <Button
+        android:id="@+id/email2"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="253dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="338dp"
+        android:background="@drawable/email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/call1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email1" />
+
+    <Button
+        android:id="@+id/call2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="338dp"
+        android:background="@drawable/call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/email1"
+        app:layout_constraintTop_toBottomOf="@+id/call1" />
+
+    <Button
+        android:id="@+id/call1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/call"
+        app:layout_constraintBottom_toTopOf="@+id/call2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/email1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/email1"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="253dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/email"
+        app:layout_constraintBottom_toTopOf="@+id/email2"
+        app:layout_constraintEnd_toStartOf="@+id/call1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

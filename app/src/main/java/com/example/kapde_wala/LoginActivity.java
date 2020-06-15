@@ -9,7 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
-    EditText username, password;
+     private static EditText username;
+     EditText password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,14 @@ public class LoginActivity extends AppCompatActivity {
 
     public void Login(){
         Intent intent = new Intent(LoginActivity.this, MainMenu.class);
+        ApplicationData.ENROLMENT = username.getText().toString();
         startActivity(intent);
+
     }
+    public static String getData(){
+        return String.valueOf(username);
+    }
+
 }
 
 
