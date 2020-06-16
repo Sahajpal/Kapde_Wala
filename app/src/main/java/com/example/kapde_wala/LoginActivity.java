@@ -26,6 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         String Username = username.getText().toString();
         String Password = password.getText().toString();
         String type = "login";
+//        Login();
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, Username, Password);
     }
