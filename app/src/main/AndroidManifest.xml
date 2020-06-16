@@ -14,7 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".OrderStatus"></activity>
-        <activity android:name=".OrderHistory" />
         <activity android:name=".CancelOrder" />
         <activity android:name=".HelpDesk" />
         <activity android:name=".Feedback" />
