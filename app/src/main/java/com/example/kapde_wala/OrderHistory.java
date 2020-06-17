@@ -32,6 +32,7 @@ public class OrderHistory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_history);
         RecyclerView rvHistory = (RecyclerView) findViewById(R.id.orderHistory);
+        rvHistory.setHasFixedSize(true);
 
 
         JSONObject post_dict = new JSONObject();

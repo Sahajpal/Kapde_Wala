@@ -17,7 +17,6 @@ public class Feedback extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
 
-        final EditText to = (EditText) findViewById(R.id.sendTo);
         final EditText subject = (EditText) findViewById(R.id.subject);
         final EditText message = (EditText) findViewById(R.id.emailText);
 
@@ -25,7 +24,7 @@ public class Feedback extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String toS = to.getText().toString();
+                String toS = "sahajpal80@gmail.com";
                 String subS = subject.getText().toString();
                 String mesS = message.getText().toString();
 

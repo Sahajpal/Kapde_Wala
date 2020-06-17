@@ -1,63 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CancelOrder">
-    <TableLayout
-        android:id="@+id/table"
-        android:layout_width="match_parent"
+    tools:context=".CancelOrder"
+    android:background="@drawable/cancel_order">
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="30dp"
-        android:layout_marginHorizontal="10dp"
-        android:background="#f1f1f1">
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="150dp"
+        android:fontFamily="monospace"
+        android:text="Cancle Order"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TableRow>
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/submit1"
+        android:onClick="cancleorder"
+        android:text="Cancel"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:text="ID"
-                android:textAlignment="center"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:text="Order Status"
-                android:textAlignment="center"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/enrol2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bigwhitebox"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/os2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/id2" />
 
-        </TableRow>
+    <TextView
+        android:id="@+id/os2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="382dp"
+        android:background="@drawable/bigwhitebox"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/enrol2" />
 
-        <TableRow>
+    <TextView
+        android:id="@+id/id2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bigwhitebox"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/enrol2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/id"
-                android:textStyle="bold"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:background="#ffffff"
-                android:layout_marginBottom="1dp"
-                android:layout_marginHorizontal="1dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/os"
-                android:textStyle="bold"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:background="#ffffff"
-                android:layout_marginRight="1dp"
-                android:layout_marginHorizontal="1dp"/>
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/smallbluebox"
+        android:text="Enrollment"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toStartOf="@+id/enrol2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
-        </TableRow>
-    </TableLayout>
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/smallbluebox"
+        android:text="ID"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintEnd_toStartOf="@+id/id2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="382dp"
+        android:background="@drawable/smallbluebox"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/os2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        android:text="Status" />
+</androidx.constraintlayout.widget.ConstraintLayout>

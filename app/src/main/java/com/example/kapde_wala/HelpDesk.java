@@ -27,14 +27,14 @@ public class HelpDesk extends AppCompatActivity {
             email1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "raghav@gmail.com", null));
+                    Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "Raghav2011rv@gmail.com", null));
                     startActivity(Intent.createChooser(intent, "Choose an Email client :"));
                 }
             });
             email2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "raghav@gmail.com", null));
+                    Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "itsyaboiassmo@gmail.com", null));
                     startActivity(Intent.createChooser(intent, "Choose an Email client :"));
                 }
             });
@@ -47,11 +47,11 @@ public class HelpDesk extends AppCompatActivity {
             call2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    dialContactPhone("0000000000");
+                    dialContactPhone("9582053821");
                 }
             });
-
         }
+
         private void dialContactPhone ( final String phoneNumber){
             startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phoneNumber, null)));
         }
