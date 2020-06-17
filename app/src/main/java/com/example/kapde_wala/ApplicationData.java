@@ -7,4 +7,5 @@ final public class ApplicationData {
     public static String USER_CREATE_ORDER = "/user/createOrder";
     public static String ENROLMENT = "";
     public static String USER_CANCEL_ORDER = "/user/cancelOrder";
+    public static String USER_LOGIN = "/user/login";
 }
