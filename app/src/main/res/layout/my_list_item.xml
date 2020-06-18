@@ -11,10 +11,11 @@
     <TextView
         android:id="@+id/id_recycler"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_weight="1"
         android:background="@drawable/idcon"
         android:textAlignment="center"
+        android:gravity="center"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textStyle="bold" />
@@ -22,20 +23,23 @@
     <TextView
         android:id="@+id/status_recycler"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_weight="1"
         android:background="@drawable/statuscon"
         android:textAlignment="center"
+        android:gravity="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/updated_recycler"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_weight="1"
         android:background="@drawable/lastcon"
         android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold" />
 </LinearLayout>

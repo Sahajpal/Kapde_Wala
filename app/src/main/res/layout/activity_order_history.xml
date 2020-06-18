@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
         android:gravity="right"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,10 +24,11 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.55"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
             android:background="@drawable/id1"
+            android:gravity="center"
             android:text="ID"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
@@ -35,10 +37,11 @@
 
         <TextView
             android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.1"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
             android:background="@drawable/status"
+            android:gravity="center"
             android:text="Status"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
@@ -47,10 +50,11 @@
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:background="@drawable/lastupdated"
+            android:gravity="center"
             android:text="Updated On"
             android:textAlignment="center"
             android:textColor="#FFFFFF"

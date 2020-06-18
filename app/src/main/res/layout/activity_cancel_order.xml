@@ -16,7 +16,7 @@
         android:layout_marginTop="88dp"
         android:layout_marginEnd="150dp"
         android:fontFamily="monospace"
-        android:text="Cancle Order"
+        android:text="Cancel Order"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
